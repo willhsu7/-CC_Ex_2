@@ -42,12 +42,12 @@ void draw() {
 
   fill(r, g, b); 
   rectMode(CENTER);
-  rect(m, n, 800, 50);  
+  rect(m, n, 800, 30);  
   /*rect(90, 0, 50, 800);
    rect(180, 0, 50, 800);
    rect(270, 0, 50, 800);
    rect(350, 0, 50, 800); */
-  n = n + 90;
+  n = n + 70;
   r= r + 50;
 
   if (m > width) {
@@ -55,6 +55,7 @@ void draw() {
     n+=50;
     r=0; 
     g+=50;
+    b=0;
   }
   if (n>height) {
     m = 0;
@@ -119,13 +120,15 @@ void draw() {
 
   noStroke();
 
+
   fill(189, 16, 224);
   triangle(rocx, rocy, rocx+50, rocy+70, rocx-50, rocy+70); //purple rocket head
 
   fill(216, 216, 216);
   rect(rocx, rocy+145, 60, 150); //grey rocket body
 
-  fill(155, 155, 155);
+  /*fill(155, 155, 155);*/
+  fill(r,g,b, 70);
   rect(rocx, rocy+100, 40, 40); // rocket window 
 
   fill(216, 216, 216);
@@ -164,4 +167,5 @@ void draw() {
     noStroke();
     ellipse(mouseX + random(50), mouseY + random(50), 20, 20);
   } // little sparkle
+
 }
