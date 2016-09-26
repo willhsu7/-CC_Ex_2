@@ -1,2 +1,2 @@
 # CC_Ex_2
- Creative Coding Assignment 1
+ Creative Coding Assignment 2
